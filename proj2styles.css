@@ -1,0 +1,282 @@
+* {
+    font-family: "Nunito Sans", sans-serif;
+    margin: 0;
+    list-style: none;
+}
+hr{
+    border-color: #aa0000; 
+}
+body {
+    background-color: rgb(151, 149, 149);
+}
+
+a {
+    color: black;
+}
+
+a:link {
+
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover a:focus {
+    text-decoration: none;
+    border:2px solid #aa0000;
+
+}
+
+a:active {
+    text-decoration: underline;
+}
+
+main {
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+/*Header*/
+h1 {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 800;
+    font-size: 5rem;
+    color:#de0c0c;
+    font-weight: bolder;
+    background-color:  rgb(23, 23, 23);
+    text-align: center;
+    padding:5vh;
+}
+
+header {
+    margin: 0;
+}
+
+/* Trending Bar*/
+h2{
+    text-align: center;
+}
+
+#trending_bar {
+    padding: 10px;
+    background-color: #4A4A48;
+    color: rgb(231,231,231);
+}
+
+#trending {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#trending div {
+    display: flex;
+}
+
+#trending a {
+    display: flex;
+    color: rgb(231,231,231);
+
+}
+.animeTitle{
+    font-size: .8em;
+}
+.topResult {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    gap: 1em;
+    width: 200px;
+    height: 100px;
+    background-color: #3e3e3c;
+    border-radius: 10px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
+    height:50px;
+    margin:.5em;
+}
+.topResult img{
+    height: 50px;
+    width: 50px;;
+    object-fit: cover;
+}
+
+
+h3{
+    font-size: 1.5rem;
+}
+
+#sortContainter {
+    display: flex;
+    height: 1.5rem;
+    justify-items: center;
+    align-items: center;
+}
+
+#sortContainter button {
+    border: 0;
+}
+/*Search Options*/
+#search_areas {
+    display: flex;
+    width: 70%;
+    margin: 2vh auto;
+    justify-content: space-evenly;
+}
+
+.searchContainer {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+
+#searchBar {
+    border: 2px solid black;
+    border-radius: 10px;
+    display: flex;
+    height: 2rem;
+    justify-items: center;
+    align-items: center;
+    background-color: white;
+}
+
+#searchBar input,
+#searchBar button {
+    border-radius: 10px;
+    border: 0;
+    margin: 1rem 0;
+}
+#searchterm{
+    margin-left: 200px;
+}
+.icon {
+    background: none;
+}
+#genreSelect{
+    font-size: 1rem;
+    border-radius: 10px;
+}
+#random {
+    font-size: 1rem;
+    border-radius: 10px;
+    background-color: #de0c0c;
+    color: black;
+    padding: 0 1rem;
+    font-weight: 600;
+}
+
+
+
+/*Search Results*/
+#debug{
+    display: none;
+}
+#content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,460px);
+    gap: 20px;
+    padding: 2rem;
+    justify-content: space-evenly;
+  justify-items: center;
+  align-content: space-evenly;
+  align-items: center;
+}
+
+.searchResult {
+    display: flex;
+    background-color: rgb(23, 23, 23);
+    border-radius: 10px;
+margin: 0 auto;
+}
+
+.resultCard {
+    display: flex;
+}
+
+.resultCard img {
+    height: 200px;
+    width: 150px;;
+    object-fit: cover;
+}
+
+.title {
+    color: rgb(231, 231, 231);
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+.titleEngl {
+    color: rgb(151, 149, 149);
+    font-weight: bold;
+}
+
+
+.infoText {
+    margin: 0 auto;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    padding-top: 10px;
+    width: 300px;
+    justify-items: end;
+}
+
+.genres {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 3px;
+    width: 100%;
+}
+
+.genres li:nth-child(even) {
+    display: none;
+}
+
+.genres li {
+    margin: 5px;
+    background-color: rgb(198, 198, 198);
+    border-radius: 20px;
+    padding: 2px 1rem
+}
+
+p {
+    color: silver;
+    font-size: 1em;
+}
+
+.showRating {
+    font-size: 1rem;
+    text-align: center;
+    margin: 1em 0;
+}
+.showStatus{
+    display: flex;
+    gap: 5px;
+}
+
+
+footer{
+    background-color:  rgb(23, 23, 23);
+    width: 100%;
+    height: 10vh;
+    color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+ bottom:0;
+}
+
+footer a{
+    color: whitesmoke;
+}
+
+
+input:focus {
+ border: 1px solid white;
+  }

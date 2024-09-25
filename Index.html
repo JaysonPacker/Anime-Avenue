@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" >
+	<title>Anime Finder</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+		rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+	<link rel="stylesheet" href="proj2styles.css">
+	
+
+
+
+</head>
+
+<body>
+	<header>
+		<h1>Anime Avenue</h1>
+		<div id="trending_bar">
+		<h2>Top Anime</h2>
+		<hr>
+		<div id="trending">
+
+		</div>
+	</div>
+	</header>
+	<main>
+
+	<div id="search_areas">
+		<div class="searchContainer bar">
+			<h3>Find a show by name</h3>
+			<div id="searchBar">
+				<input id="searchterm" type="search" autofocus value="One Piece">
+				
+				<button type="button" id="search" class="icon"><i class="fa-solid fa-magnifying-glass"></i></button>
+			</div>
+		</div>
+		<hr>
+		<div class="searchContainer genre">
+			<h3>Discover one by Genre</h3>
+			<select id="genreSelect"></select>
+			<h3>or by </h3>
+			<button id="random">Random</button>
+		</div>
+
+
+	</div>
+
+	<div id="sortContainter">
+		<h4>Release Date:</h4>
+		<button id="dateUp" class="icon"><i class="fa-solid fa-arrow-up"></i></button>
+		<button id="dateDown" class="icon"><i class="fa-solid fa-arrow-down"></i></button>
+	</div>
+	<h2>Results</h2>
+	<hr>
+	<div id="debug"></div>
+	<div id="content">
+	</div>
+</main>
+<footer>
+	<h2><a href="doc.html">Documentation</a></h2>
+</footer>
+</body>
+<script src="main.js"></script>
+</html>
